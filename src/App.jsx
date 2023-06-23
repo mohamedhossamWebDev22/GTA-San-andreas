@@ -78,7 +78,7 @@ const App = () => {
           <br />
 
           <div className="social">
-            <Link target="_blank" to={"https://www.facebook.com/"}>
+            <Link target="_blank" to={"https://www.facebook.com/profile.php?id=100054732847946"}>
               <img
                 src={logo1}
                 width={"48px"}
