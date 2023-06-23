@@ -2,9 +2,60 @@ import React from "react";
 
 import { Link, NavLink } from "react-router-dom";
 
+import { Gallery } from "react-grid-gallery";
+
 import poster from "./assets/poster.png";
 import logo1 from "./assets/socialIcon2.png";
 import logo2 from "./assets/socialIcon.png";
+
+import img1 from "./assets/img1.png";
+import img2 from "./assets/img2.png";
+import img3 from "./assets/img3.png";
+import img4 from "./assets/img4.png";
+import img5 from "./assets/img5.png";
+import img6 from "./assets/img6.png";
+
+const images = [
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.WAoihZoj0oMq5DdqLap2CwHaEK%26pid%3DApi&f=1&ipt=d50520a89e3e1a3c86ab21505c6373d0e76b53b8ef9a3514785356e42c11ac75&ipo=images",
+    width: 320,
+    height: 174,
+    isSelected: false,
+  },
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.VjL4iUZnOi2Zh7OMCRxIwgHaGS%26pid%3DApi&f=1&ipt=bfadd707cf12a5bf824264a971261510589fb21601b75df70c907b7476c2dda2&ipo=images",
+    width: 320,
+    height: 212,
+    alt: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.ptrGnfrUzrh8Njl13aMc1QHaEo%26pid%3DApi&f=1&ipt=8ae01c21e06aabdbcf2970c0e55be38233199f00276fca1f48d2139f341ad7ad&ipo=images",
+    width: 320,
+    height: 212,
+  },
+];
+
+const images2 = [
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qeRzSyT35yAIALEm_w6FoAHaEK%26pid%3DApi&f=1&ipt=9a04a15944a505b018551b531fa7236638d4a120ac9b3fc5a11eb2e0c4c90dc8&ipo=images",
+    width: 320,
+    height: 174,
+    isSelected: false,
+  },
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XuUCywRia2hCFL04Z_qGmwHaEo%26pid%3DApi&f=1&ipt=c04bb1c8652cd1ef079b5b7a9628545416a0ce7fc6ecd42c4bd3fdb3af8f10d5&ipo=images",
+    width: 320,
+    height: 212,
+    alt: "Boats (Jeshu John - designerspics.com)",
+  },
+
+  {
+    src: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Tp1w1hwBECF--ibsoQghEQAAAA%26pid%3DApi&f=1&ipt=cc5096ba260bc4adb1ab5ed1a8cd8ba90e472b8823ddfec5db12fc10edbca650&ipo=images",
+    width: 320,
+    height: 212,
+  },
+];
 
 const App = () => {
   return (
@@ -111,6 +162,14 @@ const App = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
+          </div>
+          <Gallery className="gallery" images={images} />
+          <Gallery className="gallery" images={images2} />
+
+          <div className="footer">
+            <footer>
+              <h1>Made By: محمد حسام</h1>
+            </footer>
           </div>
         </div>
       </div>
